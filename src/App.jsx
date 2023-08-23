@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Card from "./components/Card/Card";
 import SearchBar from "./components/SearchBar/SeachBar";
 import { cardData } from "../src/data";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -53,6 +54,8 @@ export default function App() {
           />
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 }

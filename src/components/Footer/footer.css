@@ -1,0 +1,11 @@
+a {
+  @apply block;
+}
+
+h2{
+  @apply mt-12 mb-4 text-2xl font-bold;
+}
+
+.blk{
+  @apply w-1/5 inline-block align-top;
+}
