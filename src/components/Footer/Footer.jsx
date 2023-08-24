@@ -1,9 +1,10 @@
 import "./footer.css";
+import "boxicons/css/boxicons.min.css";
 
 export default function Footer() {
   return (
-    <div className="bg-black text-white px-7 pb-14">
-      <div className="pb-24 relative">
+    <div className="bg-gray-950 text-white px-7 pb-14">
+      <div className="pb-24 relative mx-20">
         <div className="blk">
           <h2>Abstract</h2>
           <a href="#">Start Trial</a>
@@ -29,13 +30,15 @@ export default function Footer() {
           <h2>Company</h2>
           <a href="#">About Us</a>
           <a href="#">Careers</a>
-          <a href="#">Legal</a>
+          <a href="#" className="pb-7">
+            Legal
+          </a>
 
-          <h2>Contact Us</h2>
+          <strong>Contact Us</strong>
           <a href="#">info@abstract.com</a>
         </div>
         <div className="absolute bottom-0 right-0">
-          <h3></h3>
+          <i className="bx bxs-balloon text-4xl mb-5"></i>
           <p>© Copyright 2023</p>
           <p>Abstract Studio Design, Inc.</p>
           <p>All rights reserved</p>

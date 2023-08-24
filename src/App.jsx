@@ -9,9 +9,13 @@ export default function App() {
     <>
       <NavBar />
 
-      <div className="text-center pt-20 pb-28 bg-hero-color font-semibold">
-        <h1 className="text-7xl mb-4">How can we help?</h1>
-        <SearchBar />
+      <div className="text-center pt-20 pb-28 px-4 md:px-7 bg-hero-color font-normal">
+        <div className="max-w-[720px] w-full md:w-[90%] mx-auto">
+          <div className="text-4xl sm:text-6xl md:text-7xl mb-[50px] md:mb-4 text-center leading-[40px] sm:leading-[60px] md:leading-normal">
+            How can we help?
+          </div>
+          <SearchBar />
+        </div>
       </div>
 
       <div className="mt-32 mb-16 mx-36 py-7">
@@ -55,7 +59,7 @@ export default function App() {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
