@@ -36,3 +36,18 @@ export const cardData = [
     link: "#",
   },
 ];
+
+export const foooterData = [
+  {
+    head: "Abstract",
+    links: ["Start Trial", "Pricing", "Download"],
+  },
+  {
+    head: "Resources",
+    links: ["Blog", "Help Center", "Release Notes", "Status"],
+  },
+  {
+    head: "Community",
+    links: ["Twitter", "LinkedIn", "Facebook", "Dribble", "Podcast"],
+  },
+];

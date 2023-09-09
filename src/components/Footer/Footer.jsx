@@ -1,31 +1,30 @@
 import "./footer.css";
 import "boxicons/css/boxicons.min.css";
+import { foooterData } from "../../data";
 
 export default function Footer() {
   return (
-    <div className="bg-gray-950 text-white px-7 pb-14">
-      <div className="pb-24 relative mx-20">
-        <div className="blk">
-          <h2>Abstract</h2>
-          <a href="#">Start Trial</a>
-          <a href="#">Pricing</a>
-          <a href="#">Download</a>
-        </div>
-        <div className="blk">
-          <h2>Resources</h2>
-          <a href="#">Blog</a>
-          <a href="#">Help Center</a>
-          <a href="#">Release Notes</a>
-          <a href="#">Status</a>
-        </div>
-        <div className="blk">
-          <h2>Community</h2>
-          <a href="#">Twitter</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Facebook</a>
-          <a href="#">Dribble</a>
-          <a href="#">Podcast</a>
-        </div>
+    <footer className="bg-gray-950 text-white px-4 md:px-7 pb-14">
+      <div
+        className="pb-44 grid grid-cols-1 w-full max-w-[1900px] relative mx-auto 
+      lg:w-[90%] lg:block md:max-lg:grid-cols-2 md:max-[991px]:pb-44
+      sm:max-md:pb-12"
+      >
+        {foooterData.map((footer, index) => {
+          return (
+            <div key={index} className="blk">
+              <h2>{footer.head}</h2>
+              {footer.links.map((link, index2) => {
+                return (
+                  <a key={index2} href="#">
+                    {link}
+                  </a>
+                );
+              })}
+            </div>
+          );
+        })}
+
         <div className="blk">
           <h2>Company</h2>
           <a href="#">About Us</a>
@@ -33,10 +32,10 @@ export default function Footer() {
           <a href="#" className="pb-7">
             Legal
           </a>
-
           <strong>Contact Us</strong>
           <a href="#">info@abstract.com</a>
         </div>
+
         <div className="absolute bottom-0 right-0">
           <i className="bx bxs-balloon text-4xl mb-5"></i>
           <p>© Copyright 2023</p>
@@ -44,6 +43,6 @@ export default function Footer() {
           <p>All rights reserved</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
