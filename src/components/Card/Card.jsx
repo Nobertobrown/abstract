@@ -10,7 +10,9 @@ function Card({ title, image, body, link }) {
       <div className="p-0 md:pr-6 w-full ">
         <h2 className="">{title}</h2>
         <div className="mb-5 text-2xl">{body}</div>
-        <a href={link} className="text-regal-blue text-xl font-normal">Learn More →</a>
+        <a href={link} className="text-regal-blue text-xl font-normal">
+          Learn More →
+        </a>
       </div>
     </div>
   );
