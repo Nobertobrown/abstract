@@ -1,6 +1,5 @@
-import "./footer.css";
 import "boxicons/css/boxicons.min.css";
-import { foooterData } from "../../data";
+import { foooterData } from "../data";
 
 export default function Footer() {
   return (

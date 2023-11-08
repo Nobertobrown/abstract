@@ -2,7 +2,7 @@ import "boxicons/css/boxicons.min.css";
 
 export default function NavBar() {
   return (
-    <nav className="bg-gray-950 text-white px-4 md:px-8 h-[88px]">
+    <nav className="bg-gray-950 text-white px-4 md:px-8 h-auto py-2">
       <div className="m-auto max-w-[1900px] box-border w-full md:w-[90%] flex flex-wrap items-center justify-between">
         <div className="flex h-20 items-center">
           <i className="bx bxs-balloon text-3xl"></i>
